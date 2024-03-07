@@ -1,9 +1,6 @@
 import cv2
 from matplotlib import pyplot as plt
 import os
-from skimage.restoration import denoise_tv_bregman
-from skimage.morphology import disk
-from skimage import filters
 import numpy as np
 
 # Variabili globali
@@ -129,23 +126,28 @@ def find_holds(color_image, cv_image):
 
 def find_route(center_points, cv_image):
     # Sort center points from lowest to highest
+    center_points = sorted(center_points, key=lambda point: point[1], reverse=True)
     mean_points = []
     temp = []
-    for i in range(len(center_points)):
-        temp.append(center_points[i])
+    smoothness = 6
+    for i in range(len(center_points) + smoothness):
+        if i < len(center_points):
+            temp.append(center_points[i])
+        if i > smoothness:
+            temp.pop(0)
         intermediate_centers = [point for point in temp]
         avg_center_x = sum([point[0] for point in intermediate_centers]) / len(intermediate_centers)
         avg_center_y = sum([point[1] for point in intermediate_centers]) / len(intermediate_centers)
         mean_points.append((int(avg_center_x), int(avg_center_y)))
     
-    center_points = sorted(center_points, key=lambda point: point[1], reverse=True)
-    temp = []
-    for i in range(len(center_points)):
-        temp.append(center_points[i])
-        intermediate_centers = [point for point in temp]
-        avg_center_x = sum([point[0] for point in intermediate_centers]) / len(intermediate_centers)
-        avg_center_y = sum([point[1] for point in intermediate_centers]) / len(intermediate_centers)
-        mean_points.append((int(avg_center_x), int(avg_center_y)))
+    # center_points = sorted(center_points, key=lambda point: point[1], reverse=True)
+    # temp = []
+    # for i in range(len(center_points)):
+    #     temp.append(center_points[i])
+    #     intermediate_centers = [point for point in temp]
+    #     avg_center_x = sum([point[0] for point in intermediate_centers]) / len(intermediate_centers)
+    #     avg_center_y = sum([point[1] for point in intermediate_centers]) / len(intermediate_centers)
+    #     mean_points.append((int(avg_center_x), int(avg_center_y)))
     
     mean_points = sorted(mean_points, key=lambda point: point[1])
     
@@ -156,22 +158,21 @@ def find_route(center_points, cv_image):
     return cv_image
 
 def resize_img(win_width, win_height, width, height):
-    win_width = win_width-230
+    win_width = win_width-260
     win_height = win_height
 
     if width > height or width > win_width:
         scalingfactor = win_width/width
         new_width = win_width
         new_height = int(height*scalingfactor)
-        print("\n----DEBUG A----")
     else:
-        print("\n----DEBUG B----")
         scalingfactor = win_height/height
         new_height = win_height
         new_width = int(width*scalingfactor)
         if new_width > win_width:
             new_width = width
             new_height = height
-            
+
+
     return new_width, new_height
 
