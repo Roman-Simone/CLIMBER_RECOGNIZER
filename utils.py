@@ -75,7 +75,7 @@ def find_countour(img):
     for contour in contours:
         area = cv2.contourArea(contour)
         
-        if area > 50 and area < 500:
+        if area > 50 and area < 200:
             filtered_contours.append(contour)
 
     result_img = img.copy()

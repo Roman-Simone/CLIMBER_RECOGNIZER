@@ -38,7 +38,7 @@ In order to run the project you'll need to clone it and install the requirements
     ```
 - Activate the virtual environment
     ```BASH
-    source name/bin/activate
+    source name_of_virtual_env/bin/activate
     ```
 - Install the requirements
     ```BASH
@@ -74,4 +74,4 @@ The project can be runned in two different ways:
 
 Simone Roman - [simone.roman@studenti.unitn.it](mailto:simone.roman@studenti.unitn.it)
 
-<a href="https://www.unitn.it/"><img src="assets/extras/unitn-logo.png" width="300px"></a>
+<a href="https://www.unitn.it/"><img src="https://ing-gest.disi.unitn.it/wp-content/uploads/2022/11/marchio_disi_bianco_vert_eng-1024x295.png" width="300px"></a>

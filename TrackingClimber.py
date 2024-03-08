@@ -12,11 +12,6 @@ def show(frame):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-def func(x, a, b, c):
-    # return a * np.exp(-b * x) + c
-    return a + b * x + c * x**2
-
-    
 
 def draw_bounding_box(frame, contour):
     global point_for_line
