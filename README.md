@@ -25,8 +25,8 @@ To simulate this, a graphical user interface was created with python's tkinter l
 #### Results recognize climbing route
 <center>
     <div>
-        <img src="Media/img_lead_2_crop.jpg" style="width: 20%; margin-right: 20px;">
-        <img src="Media/img_lead_2_crop_processed.jpg" style="width: 20%;">
+        <img src="Media/img_lead_2_crop.jpg" style="width: 10%; margin-right: 20px;">
+        <img src="Media/img_lead_2_crop_processed.jpg" style="width: 10%;">
     </div>
 </center>
 
@@ -34,7 +34,7 @@ To simulate this, a graphical user interface was created with python's tkinter l
 
 <center>
 
-<img src="Media/My-Movie-4.gif" style="width: 100%;">
+<img src="Media/My-Movie-4.gif" style="width: 50%;">
 
 </center>
 
