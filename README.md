@@ -22,6 +22,15 @@ This project has two goals:
 
 To simulate this, a graphical user interface was created with python's tkinter library.
 
+#### Results
+
+<div>
+    <img src="Media/img_lead_2_crop.jpg" style="width: 20%; margin-right: 5px;">
+    <img src="Media/img_lead_2_crop_processed.jpg" style="width: 20%;">
+</div>
+
+
+
 
 ## Installation
 

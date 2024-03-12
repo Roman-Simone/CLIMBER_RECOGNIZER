@@ -46,7 +46,8 @@ def find_route_demo():
     # Find the holds and the route
     _, center_points, cv_image_processed_1 = find_holds(mask, cv_image)
     cv_image_processed_1 = find_route(center_points, cv_image_processed_1)
-
+    # Save cv_image_processed_1
+    cv2.imwrite("cv_image_processed_1.jpg", cv2.cvtColor(cv_image_processed_1, cv2.COLOR_BGR2RGB))
     # Create the mask for the green holds
     mask = cv2.inRange(hsv_image, lower_range_green, upper_range_green)
     mask = cv2.threshold(cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR), 1, 255, cv2.THRESH_BINARY)[1]
