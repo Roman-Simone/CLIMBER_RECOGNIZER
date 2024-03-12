@@ -31,10 +31,11 @@ To simulate this, a graphical user interface was created with python's tkinter l
 </center>
 
 #### Results tracking climber
+<center>
 
-![Tracking Climber](Media/My-Movie-4.gif){: width="50%"}
+![Tracking Climber](Media/My-Movie-4.gif){: width="40%"}
 
-
+</center>
 
 
 ## Installation
