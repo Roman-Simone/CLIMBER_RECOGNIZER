@@ -4,6 +4,7 @@ import numpy as np
 # Global variables
 VIDEO_PATH = "Media/video_climber.mp4"
 
+
 def show(frame):
     '''
         Show the frame for debugging
@@ -154,6 +155,7 @@ def backSubMethod(backSub, frame):
 
 
 def process_video(cap, method = "BackgroundSubtractorKNN"):
+
     '''
         Process the video using the specified method
 
@@ -172,7 +174,7 @@ def process_video(cap, method = "BackgroundSubtractorKNN"):
         prevgray = cv2.cvtColor(cap.read()[1], cv2.COLOR_BGR2GRAY)
         delay = 10
         counter = 0
-
+    
     #process the video frame by frame
     while True:
 
@@ -195,10 +197,16 @@ def process_video(cap, method = "BackgroundSubtractorKNN"):
             prevgray = gray
             processed_frame = opticalFlowMethod(flow, frame)
 
+        
+
+        # Save the processed frame as a video
+        
+      
         cv2.imshow('processed_video', processed_frame)
 
         if cv2.waitKey(int(1000/fps)) & 0xFF == ord("q"):
             break
+
 
 
 def mainTrackingClimber(method = "BackgroundSubtractorKNN"):
