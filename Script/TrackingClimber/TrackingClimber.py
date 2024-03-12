@@ -217,6 +217,7 @@ def mainTrackingClimber(method = "BackgroundSubtractorKNN"):
         return
     
     print("\nINFO: Processing video using method: {}\n".format(method))
+    
     process_video(cap, method)
     cap.release()
     cv2.destroyAllWindows()
@@ -224,4 +225,5 @@ def mainTrackingClimber(method = "BackgroundSubtractorKNN"):
 
 
 if __name__ == "__main__":
+    method = "BackgroundSubtractorKNN"
     mainTrackingClimber()

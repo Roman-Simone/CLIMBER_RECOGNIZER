@@ -1,12 +1,11 @@
 # CLIMBER_RECOGNIZER
 
 
-<div>
+<div align="center">
      <img src="https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python"/>
      <img src="https://img.shields.io/badge/opencv-3670A0?style=flat&logo=opencv" alt="Python"/>
      <img src="https://img.shields.io/badge/numpy-3670A0?style=flat&logo=numpy" alt="Python"/>
 </div>
-
 
 
 ## Table of contents
@@ -34,7 +33,7 @@ To simulate this, a graphical user interface was created with python's tkinter l
 
 
 <div align="center">
-     <img src="Media/My-Movie-4.gif" style="width: 50%;">
+    <img src="Media/video_climber_processed.gif" style="width: 50%;">
 </div>
 
 
@@ -81,7 +80,12 @@ The project can be runned in two different ways:
         ```
         python TrackingClimber.py
         ```
-        N.B. if you want to change the method change the string
+        if you want to change the tracking modes change the variable method:
+        ```
+        method = "BackgroundSubtractorKNN"
+        or
+        method = "OpticalFlow"
+        ```
 
 
 
