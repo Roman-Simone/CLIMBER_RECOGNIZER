@@ -34,7 +34,7 @@ To simulate this, a graphical user interface was created with python's tkinter l
 
 <center>
 
-<img src="Media/My-Movie-4.gif" style="width: 50%;">
+<img src="Media/My-Movie-4.gif" style="width: 50%;" align="center">
 
 </center>
 
