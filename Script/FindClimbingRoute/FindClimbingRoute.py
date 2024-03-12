@@ -1,7 +1,12 @@
 from PIL import Image, ImageTk
 import tkinter as tk
 import cv2
-from FindClimbingRoute.utils import *
+import os
+import sys
+if os.path.basename(sys.argv[0]) == "main.py":
+    from FindClimbingRoute.utils import *
+else:
+    from utils import *
 
 # Global variable
 dim_x_window = 900  # Dim x window standard

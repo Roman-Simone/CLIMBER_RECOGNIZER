@@ -1,9 +1,13 @@
 import cv2
+import os
+import sys
 import matplotlib.pyplot as plt
-from FindClimbingRoute.utils import *
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
-
+if os.path.basename(sys.argv[0]) == "main.py":
+    from FindClimbingRoute.utils import *
+else:
+    from utils import *
 
 
 
