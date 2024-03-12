@@ -23,20 +23,20 @@ This project has two goals:
 To simulate this, a graphical user interface was created with python's tkinter library.
 
 #### Results recognize climbing route
-<center>
-    <div align="center">
-        <img src="Media/img_lead_2_crop.jpg" style="width: 10%; margin-right: 20px; text-align: center">
-        <img src="Media/img_lead_2_crop_processed.jpg" style="width: 10%;">
-    </div>
-</center>
+
+<div align="center">
+   <img src="Media/img_lead_2_crop.jpg" style="width: 10%; margin-right: 20px; text-align: center">
+   <img src="Media/img_lead_2_crop_processed.jpg" style="width: 10%;">
+</div>
+
 
 #### Results tracking climber
 
-<center>
 
-<img src="Media/My-Movie-4.gif" style="width: 50%;" align="center">
+<div align="center">
+     <img src="Media/My-Movie-4.gif" style="width: 50%;">
+</div>
 
-</center>
 
 ## Installation
 
