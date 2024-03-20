@@ -17,15 +17,17 @@ def find_holds(color_image, cv_image):
     cv_image_ret = cv_image.copy()
     # find edges and contours
     edges = cv2.Canny(color_image, 50, 150)
+    # cv2.imwrite("edges.jpg", edges)
     kernel = np.ones((3, 3), np.uint8)      # Dilate the edges to improve contour detection
     dilated_edges = cv2.dilate(edges, kernel, iterations=1)
+    # cv2.imwrite("dilated_edges.jpg", dilated_edges)
     contours, _ = cv2.findContours(dilated_edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     # Filter contours by area and non-hollow contours
     filtered_contours = []
     center_points = []
     for cnt in contours:
-        if cv2.contourArea(cnt) > 50:
+        if cv2.contourArea(cnt) > 50 and cv2.contourArea(cnt) < 10000:
             filtered_contours.append(cnt)
             center = cv2.moments(cnt)
             cx = int(center["m10"] / center["m00"])

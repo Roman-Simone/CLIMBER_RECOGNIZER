@@ -12,7 +12,7 @@ else:
 dim_x_window = 900  # Dim x window standard
 dim_y_window = 800  # Dim y window standard
 width_form = 270    # Width of the form
-path_img = "Media/img_lead_1.jpg" #"Media/img_lead_1.jpg"  #"Media/img_lead_2.jpg" 
+path_img = "Media/img_lead_2.jpg" #"Media/img_lead_1.jpg"  #"Media/img_lead_2.jpg" 
 start_x = -1  # Start x coordinate of the rectangle
 start_y = -1  # Start y coordinate of the rectangle
 finish_x = -1 # Finish x coordinate of the rectangle

@@ -4,7 +4,6 @@ import numpy as np
 # Global variables
 VIDEO_PATH = "Media/video_climber.mp4"
 
-
 def show(frame):
     '''
         Show the frame for debugging
@@ -69,12 +68,13 @@ def find_contours(frame):
 
 
 def opticalFlowMethod(flow, frame):
+    global i
     '''
         Apply the optical flow method to the frame
 
         Parameters:
         - flow: numpy.ndarray, the optical flow between two consecutive frames
-        - frame: numpy.ndarray, the current frame
+        - frame: numpy.ndarray, the current frame 
 
         Returns:
         - frame: numpy.ndarray, the frame with the bounding box drawn around the detected object
@@ -97,8 +97,6 @@ def opticalFlowMethod(flow, frame):
     # Convert HSV to BGR color space
     bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
 
-
-
     # Convert the BGR image to grayscale
     mask = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
     # Apply thresholding to create a binary mask
@@ -109,7 +107,6 @@ def opticalFlowMethod(flow, frame):
     #dilate and after erode the mask
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
     mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
-    # show(mask)
 
     #find contour
     contour = find_contours(mask)
@@ -142,10 +139,10 @@ def backSubMethod(backSub, frame):
 
     # Apply morphological closing to further refine the mask (Dilate and erode the mask)
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
-    dilated = cv2.morphologyEx(fgMask, cv2.MORPH_CLOSE, kernel)
-
+    fgMask = cv2.morphologyEx(fgMask, cv2.MORPH_CLOSE, kernel)
+    
     # Find the contour of the climber 
-    contour = find_contours(dilated)
+    contour = find_contours(fgMask)
 
     # Draw the bounding box around the climber on the frame
     frame = draw_bounding_box(frame, contour)
@@ -155,7 +152,6 @@ def backSubMethod(backSub, frame):
 
 
 def process_video(cap, method = "BackgroundSubtractorKNN"):
-
     '''
         Process the video using the specified method
 
@@ -185,6 +181,7 @@ def process_video(cap, method = "BackgroundSubtractorKNN"):
 
         if method == "BackgroundSubtractorKNN":
             processed_frame = backSubMethod(backSub, frame)
+        
         else:
             # Do optical flow every 10 frames to avoid flickering
             if counter < delay:
@@ -197,11 +194,7 @@ def process_video(cap, method = "BackgroundSubtractorKNN"):
             prevgray = gray
             processed_frame = opticalFlowMethod(flow, frame)
 
-        
 
-        # Save the processed frame as a video
-        
-      
         cv2.imshow('processed_video', processed_frame)
 
         if cv2.waitKey(int(1000/fps)) & 0xFF == ord("q"):
@@ -224,6 +217,8 @@ def mainTrackingClimber(method = "BackgroundSubtractorKNN"):
 
 
 
+
+
 if __name__ == "__main__":
     method = "BackgroundSubtractorKNN"
-    mainTrackingClimber()
+    mainTrackingClimber(method)
