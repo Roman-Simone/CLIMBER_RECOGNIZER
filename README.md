@@ -67,46 +67,44 @@ In order to run the project you'll need to clone it and install the requirements
 
 The project can be runned in two different ways:
 - through the GUI:
-     > [!WARNING]
-     > This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
+     
   
     ```
     python main.py     
     ```
     
     After running it a menu will be opened and there select the demo you want to try out.
+> [!WARNING]
+> This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
     
 
 - Running directly:
-  
-    - To run the find route part demo:
+        
+     - To run the Tracking Climber part:
+     
         ```
-        python FindClimbingRouteDemo.py
+        python TrackingClimber.py
         ```
         
-    - To run the GUI of find route
-
+        if you want to change the tracking modes change the variable method:
+        
+        ```
+        method = "BackgroundSubtractorKNN"
+        or
+        method = "OpticalFlow"
+        ```
+     - To run the find route part demo:
+             ```
+             python FindClimbingRouteDemo.py
+             ```
+             
+         - To run the GUI of find route
+     
+        ```
+        python FindClimbingRoute.py  
+        ```
 > [!WARNING]
 > This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
-
-   ```
-   python FindClimbingRoute.py  
-   ```
-   
-- To run the Tracking Climber part:
-
-   ```
-   python TrackingClimber.py
-   ```
-   
-   if you want to change the tracking modes change the variable method:
-   
-   ```
-   method = "BackgroundSubtractorKNN"
-   or
-   method = "OpticalFlow"
-   ```
-
 
 
 # Contacts
