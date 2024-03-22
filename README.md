@@ -1,5 +1,7 @@
 # CLIMBER_RECOGNIZER
-
+> [!NOTE]
+> The proposed functions are all publicly accessible. The other functions should be considered private, as they are only support functions used internally.
+> The full documentation can be found [here](https://christiansassi.github.io/signal-image-and-video-project/).
 
 <div align="center">
      <img src="https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python"/>
