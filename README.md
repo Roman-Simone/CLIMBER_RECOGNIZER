@@ -70,9 +70,10 @@ The project can be runned in two different ways:
 > [!WARNING]
 > This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
   
-    ```BASH
+    ```
     python main.py     
     ```
+    
     After running it a menu will be opened and there select the demo you want to try out.
     
 
