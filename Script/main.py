@@ -39,7 +39,7 @@ def main():
     label_title.grid(row=0, column=0, columnspan=2)
 
     # Create the labels and buttons
-    labels = ["Find Climbing Route DEMO\n", "Find Climbing Route\n", "Tracking Climber (BackgroundSubtractorKNN)\n", "Tracking Climber (OpticalFlow)\n"]
+    labels = ["Find Climbing Route DEMO\n", "Find Climbing Route GUI (Beta version)\n", "Tracking Climber (BackgroundSubtractorKNN)\n", "Tracking Climber (OpticalFlow)\n"]
     buttons = [button1_clicked, button2_clicked, button3_clicked, button4_clicked]
 
     for i in range(len(labels)):
