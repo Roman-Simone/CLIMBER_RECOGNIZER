@@ -65,7 +65,7 @@ The project can be runned in two different ways:
 - through the GUI:
   
     ```BASH
-    python main.py
+    python main.py     // this part work with python 3.10 with other python version may there are some issues
     ```
     After running it a menu will be opened and there select the demo you want to try out.
     
@@ -74,9 +74,9 @@ The project can be runned in two different ways:
   
     - To run the find route part:
         ```
-        python FindClimbingRoute.py
-        or 
         python FindClimbingRouteDemo.py
+        or
+        python FindClimbingRoute.py  // this part work with python 3.10 with other python version may there are some issues
         ```
     - To run the Tracking Climber part:
         ```
