@@ -8,6 +8,7 @@ if os.path.basename(sys.argv[0]) == "main.py":
 else:
     from utils import *
 
+
 # Global variable
 dim_x_window = 900  # Dim x window standard
 dim_y_window = 800  # Dim y window standard
