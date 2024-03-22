@@ -75,7 +75,7 @@ The project can be runned in two different ways:
     
     After running it a menu will be opened and there select the demo you want to try out.
 > [!WARNING]
-> This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
+> This part works properly with python 3.10 with other python versions there may be problems with tkinter library. You can still directly run scripts where tkinter is not used.
     
 
 - Running directly:
@@ -105,7 +105,7 @@ The project can be runned in two different ways:
         python FindClimbingRoute.py  
         ```
 > [!WARNING]
-> This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
+> The last part of GUI works properly with python 3.10 with other python versions there may be problems with tkinter library.
 
 
 # Contacts
