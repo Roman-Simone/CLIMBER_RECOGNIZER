@@ -69,7 +69,7 @@ The project can be runned in two different ways:
     ATTENTION: This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
   
     ```BASH
-    python main.py     // It works with python 3.10 with other python versions there may be problems with tkinter library.
+    python main.py     // It works properly with python 3.10 with other python versions there may be problems with tkinter library.
     ```
     After running it a menu will be opened and there select the demo you want to try out.
     
@@ -85,7 +85,7 @@ The project can be runned in two different ways:
 
         ATTENTION: This part works properly with python 3.10 with other python versions there may be problems with tkinter library:
         ```
-        python FindClimbingRoute.py  // It works with python 3.10 with other python versions there may be problems with tkinter library.
+        python FindClimbingRoute.py  // It works properly with python 3.10 with other python versions there may be problems with tkinter library.
         ```
     - To run the Tracking Climber part:
         ```
