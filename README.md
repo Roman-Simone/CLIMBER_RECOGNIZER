@@ -1,7 +1,5 @@
 # CLIMBER_RECOGNIZER
-> [!NOTE]
-> The proposed functions are all publicly accessible. The other functions should be considered private, as they are only support functions used internally.
-> The full documentation can be found [here](https://christiansassi.github.io/signal-image-and-video-project/).
+
 
 <div align="center">
      <img src="https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python"/>
@@ -68,8 +66,8 @@ In order to run the project you'll need to clone it and install the requirements
 The project can be runned in two different ways:
 - through the GUI:
 
-    > [!WARNING]
-    > This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
+> [!WARNING]
+> This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
   
     ```BASH
     python main.py     // It works properly with python 3.10 with other python versions there may be problems with tkinter library.
