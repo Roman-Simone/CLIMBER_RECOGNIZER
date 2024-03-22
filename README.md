@@ -21,7 +21,7 @@ This project has two goals:
 
 To simulate this, a graphical user interface was created with python's tkinter library.
 > [!WARNING]
-> This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
+> This part of GUI works properly with python 3.10 with other python versions there may be problems with tkinter library.
 
 For more information, please refer to the [Report_project](https://github.com/Roman-Simone/Climber_recognizer/blob/main/Report_project.pdf) document. 
 
