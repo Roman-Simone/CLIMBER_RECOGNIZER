@@ -94,11 +94,12 @@ The project can be runned in two different ways:
         method = "OpticalFlow"
         ```
      - To run the find route part demo:
-             ```
-             python FindClimbingRouteDemo.py
-             ```
+       
+        ```
+        python FindClimbingRouteDemo.py
+        ```
              
-         - To run the GUI of find route
+     - To run the GUI of find route
      
         ```
         python FindClimbingRoute.py  
