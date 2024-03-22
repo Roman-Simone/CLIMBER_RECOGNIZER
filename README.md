@@ -64,9 +64,10 @@ In order to run the project you'll need to clone it and install the requirements
 ## Running the project
 
 The project can be runned in two different ways:
-- through the GUI 
+- through the GUI:
 
-    ATTENTION: This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
+    > [!WARNING]
+    > This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
   
     ```BASH
     python main.py     // It works properly with python 3.10 with other python versions there may be problems with tkinter library.
