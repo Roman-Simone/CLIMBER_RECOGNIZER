@@ -19,7 +19,9 @@ This project has two goals:
 - The first is to create software capable of recognizing an indoor climbing route given a photo and the color of the route holds
 - The second to perform tracking of a climber using a video as input. Two modes were used the first is with optical flow while the second is with background subtractor
 
-To simulate this, a graphical user interface was created with python's tkinter library (It works with python 3.10. With other python versions there may be problems). For more information, please refer to the [Report_project](https://github.com/Roman-Simone/Climber_recognizer/blob/main/Report_project.pdf) document. 
+To simulate this, a graphical user interface was created with python's tkinter library ATTENTION: This part works properly with python 3.10 with other python versions there may be problems with tkinter library. 
+
+For more information, please refer to the [Report_project](https://github.com/Roman-Simone/Climber_recognizer/blob/main/Report_project.pdf) document. 
 
 #### Results recognize climbing route
 
@@ -62,21 +64,28 @@ In order to run the project you'll need to clone it and install the requirements
 ## Running the project
 
 The project can be runned in two different ways:
-- through the GUI (this part work with python 3.10 with other python version may there are some issues):
+- through the GUI 
+
+    ATTENTION: This part works properly with python 3.10 with other python versions there may be problems with tkinter library.
   
     ```BASH
-    python main.py     // It works with python 3.10. With other python versions there may be problems with tkinter library.
+    python main.py     // It works with python 3.10 with other python versions there may be problems with tkinter library.
     ```
     After running it a menu will be opened and there select the demo you want to try out.
     
 
 - Running directly:
   
-    - To run the find route part:
+    - To run the find route part demo:
         ```
         python FindClimbingRouteDemo.py
-        or
-        python FindClimbingRoute.py  // It works with python 3.10. With other python versions there may be problems with tkinter library.
+        ```
+        
+    - To run the GUI of find route
+
+        ATTENTION: This part works properly with python 3.10 with other python versions there may be problems with tkinter library:
+        ```
+        python FindClimbingRoute.py  // It works with python 3.10 with other python versions there may be problems with tkinter library.
         ```
     - To run the Tracking Climber part:
         ```
