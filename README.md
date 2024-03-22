@@ -16,8 +16,8 @@
 
 ## Description
 This project has two goals:
-- The first is to create software capable of recognizing an indoor climbing route given a photo given the color of the route holds
-- The second to perform tracking of a climber using a video as input. Two modes were used the first is with optical flow while the second is with bgbackground
+- The first is to create software capable of recognizing an indoor climbing route given a photo and the color of the route holds
+- The second to perform tracking of a climber using a video as input. Two modes were used the first is with optical flow while the second is with background subtractor
 
 To simulate this, a graphical user interface was created with python's tkinter library. For more information, please refer to the [Report_project](https://github.com/Roman-Simone/Climber_recognizer/blob/main/Report_project.pdf) document. 
 
@@ -39,7 +39,7 @@ To simulate this, a graphical user interface was created with python's tkinter l
 
 ## Installation
 
-In order to run the project you'll need to clone it and install the requirements. We suggest you to create a virtual environment 
+In order to run the project you'll need to clone it and install the requirements. I suggest you to create a virtual environment. These are the steps:
 - Clone it
 
     ```BASH
@@ -67,7 +67,7 @@ The project can be runned in two different ways:
     ```BASH
     python main.py
     ```
-    After running it a menu will be opened there select the demo you want to try out.
+    After running it a menu will be opened and there select the demo you want to try out.
     
 
 - Running directly:
@@ -75,6 +75,8 @@ The project can be runned in two different ways:
     - To run the find route part:
         ```
         python FindClimbingRoute.py
+        or 
+        python FindClimbingRouteDemo.py
         ```
     - To run the Tracking Climber part:
         ```
