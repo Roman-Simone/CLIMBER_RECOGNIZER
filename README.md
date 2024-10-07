@@ -1,16 +1,15 @@
-# CLIMBER_RECOGNIZER
-
-
 <div align="center">
-     <img src="https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python"/>
-     <img src="https://img.shields.io/badge/opencv-3670A0?style=flat&logo=opencv" alt="Python"/>
-     <img src="https://img.shields.io/badge/numpy-3670A0?style=flat&logo=numpy" alt="Python"/>
+  <h1 style="border-bottom: none;">Climber Recognizer</h1>
+  <img src="https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python"/>
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white" alt="NumPy"/>
 </div>
 
 
 ## Table of contents
 
 -   [Description](#Description)
+-   [Project Structure](#project-structure)
 -   [Installation](#Installation)
 -   [Running the project](#Running-the-project)
 
@@ -40,6 +39,8 @@ For more information, please refer to the [Report_project](https://github.com/Ro
     <img src="Media/video_climber_processed.gif" style="width: 50%;">
 </div>
 
+
+##Project Structure
 
 ## Installation
 
