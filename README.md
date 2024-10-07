@@ -40,8 +40,28 @@ For more information, please refer to the [Report_project](https://github.com/Ro
 </div>
 
 
-##Project Structure
-
+## Project Structure
+```BASH
+├── Media
+│   ├── img_lead_1.jpg
+│   ├── img_lead_1_crop.jpg
+│   ├── img_lead_2.jpg
+│   ├── img_lead_2_crop.jpg
+│   ├── img_lead_2_crop_processed.jpg
+│   ├── video_climber.mp4
+│   └── video_climber_processed.gif
+├── README.md
+├── Report_project.pdf
+├── Script
+│   ├── FindClimbingRoute
+│   │   ├── FindClimbingRoute.py
+│   │   ├── FindClimbingRouteDemo.py
+│   │   └── utils.py
+│   ├── TrackingClimber
+│   │   └── TrackingClimber.py
+│   └── main.py
+└── requirements.txt
+```
 ## Installation
 
 In order to run the project you'll need to clone it and install the requirements. I suggest you to create a virtual environment. These are the steps:
