@@ -1,5 +1,5 @@
-matplotlib==3.8.3
-numpy==1.26.4
-opencv-python==4.9.0.80
-pillow==10.2.0
-tk==0.1.0
+matplotlib
+numpy
+opencv-python
+pillow
+tk
